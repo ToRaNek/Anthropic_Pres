@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic - Ma Startup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <style>
+        :root {
+            --claude-cream: #F4EFE6;
+            --claude-tan: #D4A574;
+            --claude-orange: #CC785C;
+            --claude-dark: #1F1812;
+            --claude-brown: #3E2723;
+            --claude-gold: #E8B86D;
+        }
+
+        .reveal {
+            background: linear-gradient(135deg, var(--claude-dark) 0%, var(--claude-brown) 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            color: var(--claude-cream);
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: var(--claude-tan);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        .reveal h1 { font-size: 3.5em; }
+        .reveal h2 { font-size: 2.5em; color: var(--claude-orange); margin-bottom: 30px; }
+        .reveal h3 { font-size: 1.8em; color: var(--claude-gold); }
+
+        .box {
+            background: rgba(244, 239, 230, 0.08);
+            border: 2px solid var(--claude-tan);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(212, 165, 116, 0.2);
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 48px rgba(212, 165, 116, 0.3);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .highlight {
+            color: var(--claude-orange);
+            font-weight: bold;
+        }
+
+        .metric {
+            font-size: 1.6em;
+            color: var(--claude-gold);
+            font-weight: bold;
+        }
+
+        .reveal ul { text-align: left; }
+        .reveal li { margin: 15px 0; font-size: 1.1em; }
+
+        .reveal table {
+            font-size: 0.85em;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .reveal table thead {
+            background: var(--claude-orange);
+            color: var(--claude-dark);
+        }
+
+        .reveal table th, .reveal table td {
+            padding: 15px;
+        }
+
+        .simple-text {
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        .source {
+            font-size: 0.7em;
+            opacity: 0.7;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* FIX slides fantômes */
+        .reveal .slides section.past,
+        .reveal .slides section.future {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            display: none !important;
+        }
+
+        .reveal .slides section.present {
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1 -->
+            <section>
+                <h1>ANTHROPIC</h1>
+                <h2>L'IA Sûre et Fiable</h2>
+                <div class="box" style="margin-top: 50px;">
+                    <p class="metric">40 milliards de dollars</p>
+                    <p style="font-size: 1.3em;">Valorisation en 2025</p>
+                </div>
+                <p style="margin-top: 40px; font-size: 1.1em;">Par Dario Amodei, fondateur et CEO</p>
+            </section>
+
+            <!-- SLIDE 2 -->
+            <section>
+                <h2>Qui Sommes-Nous ?</h2>
+                <div class="box">
+                    <h3>Création</h3>
+                    <p class="simple-text">Fondée en <span class="highlight">2021</span> à San Francisco</p>
+                    <p class="simple-text"><span class="highlight">500+ employés</span> experts en IA</p>
+                </div>
+                <div class="box">
+                    <h3>Les Chiffres</h3>
+                    <p class="simple-text">💰 <span class="metric">7,3 milliards $</span> levés</p>
+                    <p class="simple-text">📈 <span class="metric">40 milliards $</span> de valeur</p>
+                    <p class="simple-text">💵 <span class="metric">Centaines de millions $</span> de revenus/an</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 3 -->
+            <section>
+                <h2>Notre Histoire</h2>
+                <h3 style="color: var(--claude-orange);">Pourquoi J'ai Quitté OpenAI</h3>
+                <div class="box" style="margin-top: 30px;">
+                    <p class="simple-text">En 2021, j'ai quitté OpenAI avec 7 collègues</p>
+                </div>
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="box" style="border-color: #f44336;">
+                        <h3>Le Problème chez OpenAI</h3>
+                        <p>❌ Trop de vitesse, pas assez de sécurité</p>
+                        <p>❌ L'argent devient plus important que la mission</p>
+                    </div>
+                    <div class="box" style="border-color: #4caf50;">
+                        <h3>Ma Vision</h3>
+                        <p>✅ La sécurité AVANT tout</p>
+                        <p>✅ Une IA bénéfique pour l'humanité</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4 -->
+            <section>
+                <h2>Notre Produit</h2>
+                <h1 style="font-size: 5em; color: var(--claude-gold);">CLAUDE</h1>
+                <p class="simple-text" style="margin-top: 30px;">Notre assistant IA en 3 versions :</p>
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="box">
+                        <h3>⚡ Haiku</h3>
+                        <p>Ultra-rapide et pas cher</p>
+                    </div>
+                    <div class="box">
+                        <h3>🎵 Sonnet</h3>
+                        <p>Le meilleur rapport qualité/prix</p>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <h3>🎭 Opus</h3>
+                    <p>Le plus intelligent pour les tâches complexes</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 5 -->
+            <section>
+                <h2>Pourquoi Claude Est Meilleur</h2>
+                <div class="box">
+                    <h3>📄 Mémoire Géante</h3>
+                    <p class="simple-text">Peut lire et comprendre <span class="highlight">des livres entiers</span></p>
+                    <p class="simple-text">200 000 mots en mémoire = 500 pages</p>
+                </div>
+                <div class="grid">
+                    <div class="box">
+                        <h3>🧠 Plus Fiable</h3>
+                        <p>Moins d'erreurs et d'hallucinations</p>
+                    </div>
+                    <div class="box">
+                        <h3>🔒 Plus Sûr</h3>
+                        <p>Fait confiance par les banques et hôpitaux</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6 -->
+            <section>
+                <h2>Notre Grande Innovation</h2>
+                <h1>IA Constitutionnelle</h1>
+                <p class="simple-text" style="margin-top: 30px;">Comment on entraîne Claude à être sûr et éthique ?</p>
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="box" style="border-color: #f44336;">
+                        <h3>❌ Méthode Classique</h3>
+                        <p>Des humains notent chaque réponse</p>
+                        <p><span style="font-size: 0.9em;">Problème : lent, cher, et biaisé</span></p>
+                    </div>
+                    <div class="box" style="border-color: #4caf50;">
+                        <h3>✅ Notre Méthode</h3>
+                        <p>L'IA apprend avec une "Constitution" de règles éthiques</p>
+                        <p><span style="font-size: 0.9em;">Résultat : rapide et cohérent</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7 -->
+            <section>
+                <h2>Computer Use</h2>
+                <h3>Notre Rupture Technologique 2024</h3>
+                <div class="box" style="margin-top: 40px;">
+                    <p class="simple-text">Les autres IA : <span style="color: #f44336;">génèrent du texte</span></p>
+                    <p class="simple-text">Claude : <span class="highlight" style="font-size: 1.3em;">utilise l'ordinateur comme un humain</span></p>
+                </div>
+                <div class="box" style="margin-top: 30px;">
+                    <h3>Ce que Claude peut faire :</h3>
+                    <ul>
+                        <li>👁️ Voir votre écran</li>
+                        <li>🖱️ Bouger la souris et cliquer</li>
+                        <li>⌨️ Taper du texte</li>
+                        <li>🌐 Naviguer sur internet</li>
+                        <li>💼 Automatiser des tâches répétitives</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 8 -->
+            <section>
+                <h2>Claude Code</h2>
+                <h3>Notre Outil pour Développeurs</h3>
+                <div class="box">
+                    <p class="simple-text">Claude Code aide les programmeurs à coder plus vite</p>
+                </div>
+                <div class="grid">
+                    <div class="box">
+                        <h3>Ce qu'il fait</h3>
+                        <ul style="font-size: 0.95em;">
+                            <li>✍️ Écriture de code assistée</li>
+                            <li>🐛 Correction automatique de bugs</li>
+                            <li>💡 Suggestions intelligentes</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Intégrations</h3>
+                        <ul style="font-size: 0.95em;">
+                            <li>VS Code</li>
+                            <li>Cursor</li>
+                            <li>Replit</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9 -->
+            <section>
+                <h2>Comment On Gagne de l'Argent</h2>
+                <div class="grid">
+                    <div class="box">
+                        <h3>1️⃣ Abonnements</h3>
+                        <p class="simple-text">Claude Pro : <span class="highlight">20$/mois</span></p>
+                        <p>Pour les particuliers</p>
+                    </div>
+                    <div class="box">
+                        <h3>2️⃣ API pour Entreprises</h3>
+                        <p class="simple-text">Facturation à l'usage</p>
+                        <p>Pour les développeurs</p>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <h3>3️⃣ Intégrations Partout</h3>
+                    <p class="simple-text">Comme Intel dans les ordinateurs, Claude est intégré dans :</p>
+                    <p>AWS, Google Cloud, Salesforce, Notion, Slack...</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 10 -->
+            <section>
+                <h2>Nos Investisseurs</h2>
+                <div class="box">
+                    <h3 class="metric">7,3 Milliards $ Levés</h3>
+                </div>
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="box" style="background: rgba(255, 153, 0, 0.15);">
+                        <h3>🟠 Amazon</h3>
+                        <p class="metric">4 Milliards $</p>
+                        <p>Infrastructure cloud (serveurs)</p>
+                    </div>
+                    <div class="box" style="background: rgba(66, 133, 244, 0.15);">
+                        <h3>🔵 Google</h3>
+                        <p class="metric">2 Milliards $</p>
+                        <p>Infrastructure cloud</p>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <h3>Autres Investisseurs</h3>
+                    <p>Spark Capital • Menlo Ventures • Salesforce Ventures • Sound Ventures • Zoom Ventures</p>
+                    <p class="simple-text">Total : <span class="highlight">~1,3 Mds $</span></p>
+                </div>
+            </section>
+
+            <!-- SLIDE 11 -->
+            <section>
+                <h2>Nos Clients</h2>
+                <div class="box">
+                    <h3>Secteurs où la Sécurité est CRITIQUE</h3>
+                    <div class="grid" style="margin-top: 20px; font-size: 1.1em;">
+                        <div>
+                            <p>🏦 <span class="highlight">Finance</span></p>
+                            <p style="font-size: 0.85em;">JPMorgan, Goldman Sachs</p>
+                        </div>
+                        <div>
+                            <p>🏥 <span class="highlight">Santé</span></p>
+                            <p style="font-size: 0.85em;">Hôpitaux, recherche médicale</p>
+                        </div>
+                        <div>
+                            <p>🏛️ <span class="highlight">Gouvernements</span></p>
+                            <p style="font-size: 0.85em;">États-Unis, Islande</p>
+                        </div>
+                        <div>
+                            <p>⚖️ <span class="highlight">Juridique</span></p>
+                            <p style="font-size: 0.85em;">Cabinets d'avocats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <h3>Tech & Startups</h3>
+                    <p>Replit, Cursor, VS Code, Notion, Slack...</p>
+                </div>
+                <p class="source">Sources: Anthropic.com, TechCrunch, Bloomberg</p>
+            </section>
+
+            <!-- SLIDE 12 -->
+            <section>
+                <h2>Face à la Concurrence</h2>
+                <table style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>Concurrent</th>
+                            <th>Leur Force</th>
+                            <th>Notre Avantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>OpenAI (ChatGPT)</strong></td>
+                            <td>Le plus connu</td>
+                            <td class="highlight">Plus sûr et fiable</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Gemini</strong></td>
+                            <td>Intégré partout</td>
+                            <td class="highlight">Indépendant</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Meta Llama</strong></td>
+                            <td>Gratuit (open source)</td>
+                            <td class="highlight">Support professionnel</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="box" style="margin-top: 30px;">
+                    <h3>Notre Position</h3>
+                    <p class="simple-text"><span class="highlight">L'IA la plus sûre</span> pour les entreprises qui ne peuvent pas se permettre d'erreurs</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 13 -->
+            <section>
+                <h2>Notre Protection Unique</h2>
+                <h3>Le Comité de Sécurité Indépendant</h3>
+                <div class="box" style="margin-top: 30px;">
+                    <h3>Le Problème</h3>
+                    <p class="simple-text">Comment éviter que l'argent fasse oublier notre mission de sécurité ?</p>
+                </div>
+                <div class="box" style="border-color: #4caf50; margin-top: 20px;">
+                    <h3>Notre Solution</h3>
+                    <p class="simple-text">Un <span class="highlight">comité indépendant</span> surveille l'entreprise</p>
+                    <ul style="font-size: 1em;">
+                        <li>Peut bloquer des décisions dangereuses</li>
+                        <li>Protège la mission même contre les actionnaires</li>
+                        <li>Première entreprise tech à faire ça</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 14 -->
+            <section>
+                <h2>Notre Vision du Futur</h2>
+                <h1>"Le Siècle Compressé"</h1>
+                <div class="box" style="margin-top: 40px;">
+                    <p class="simple-text" style="font-size: 1.4em; color: var(--claude-gold);">
+                        "L'IA va permettre de faire <span class="highlight">50 ans de progrès en 5 ans</span>"
+                    </p>
+                    <p style="font-size: 1em; margin-top: 20px;">— Dario Amodei</p>
+                </div>
+                <div class="grid" style="margin-top: 30px;">
+                    <div class="box">
+                        <h3>🧬 Santé</h3>
+                        <p>Nouveaux médicaments 10x plus vite</p>
+                    </div>
+                    <div class="box">
+                        <h3>🌍 Climat</h3>
+                        <p>Solutions au changement climatique</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 15 -->
+            <section>
+                <h2>Pourquoi Nous Choisir ?</h2>
+                <div class="box">
+                    <h3>1️⃣ Énorme Marché</h3>
+                    <p class="metric">1 500 Milliards $</p>
+                    <p>Marché de l'IA d'entreprise d'ici 2030</p>
+                </div>
+                <div class="grid">
+                    <div class="box">
+                        <h3>2️⃣ Différence Claire</h3>
+                        <p>L'alternative sûre à OpenAI</p>
+                    </div>
+                    <div class="box">
+                        <h3>3️⃣ Meilleurs Experts</h3>
+                        <p>Ex-leaders d'OpenAI</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="box">
+                        <h3>4️⃣ Gros Partenaires</h3>
+                        <p>Amazon + Google</p>
+                    </div>
+                    <div class="box">
+                        <h3>5️⃣ Ça Marche</h3>
+                        <p>Croissance explosive</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 16 -->
+            <section>
+                <h2>Nos Défis (Soyons Honnêtes)</h2>
+                <div class="grid">
+                    <div class="box" style="border-color: #ff9800;">
+                        <h3>⚠️ Pas Encore Rentable</h3>
+                        <p>On dépense plus qu'on gagne</p>
+                        <p><small>Rentabilité prévue : 2027-2028</small></p>
+                    </div>
+                    <div class="box" style="border-color: #ff9800;">
+                        <h3>⚠️ Concurrence Féroce</h3>
+                        <p>OpenAI, Google, Meta ont plus d'argent</p>
+                    </div>
+                </div>
+                <div class="grid" style="margin-top: 20px;">
+                    <div class="box" style="border-color: #ff9800;">
+                        <h3>⚠️ Questions Légales</h3>
+                        <p>Droits d'auteur des données d'entraînement</p>
+                    </div>
+                    <div class="box" style="border-color: #ff9800;">
+                        <h3>⚠️ Dépendance</h3>
+                        <p>On dépend d'Amazon et Google pour les serveurs</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 17 -->
+            <section>
+                <h1>ANTHROPIC</h1>
+                <h2>En Résumé</h2>
+                <div class="box" style="margin-top: 50px; font-size: 1.2em;">
+                    <p style="margin: 35px 0;">
+                        ✅ <span class="highlight">Mission Claire</span><br>
+                        Créer une IA sûre et bénéfique
+                    </p>
+                    <p style="margin: 35px 0;">
+                        ✅ <span class="highlight">Technologie Unique</span><br>
+                        IA Constitutionnelle + Computer Use
+                    </p>
+                    <p style="margin: 35px 0;">
+                        ✅ <span class="highlight">Alternative Crédible</span><br>
+                        Face au monopole d'OpenAI
+                    </p>
+                </div>
+            </section>
+
+            <!-- SLIDE 18 -->
+            <section data-background="#000000">
+                <h1 style="color: var(--claude-gold);">Merci !</h1>
+                <div class="box" style="margin-top: 50px;">
+                    <h3>Pour Essayer Claude</h3>
+                    <p class="simple-text"><span class="highlight">claude.ai</span> (gratuit)</p>
+                    <p class="simple-text">Claude Pro : 20$/mois</p>
+                </div>
+                <div class="box" style="margin-top: 30px;">
+                    <h3>Contact</h3>
+                    <p>anthropic.com</p>
+                </div>
+                <br>
+                <h2 style="color: var(--claude-orange);">Questions ?</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'fade',
+            transitionSpeed: 'fast',
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+            backgroundTransition: 'none',
+            viewDistance: 1
+        });
+    </script>
+</body>
+</html>
